@@ -33,4 +33,6 @@ class Activity(models.Model):
 def record_activity(instance, action, user):
     if not user.is_authenticated():
         user = None
+    if not instance:
+        return
     Activity.objects.create(content_object=instance, action=action, user=user)
