@@ -8,11 +8,13 @@ NAME_DESCRIPTION = _(u'Some user did something to THIS')
 ACTION_ADDED = 'added'
 ACTION_EDITED = 'edited'
 ACTION_DELETED = 'deleted'
+ACTION_VIEWED = 'viewed'
 
 ACTIONS = (
     (ACTION_ADDED, _('Added')),
     (ACTION_EDITED, _('Edited')),
     (ACTION_DELETED, _('Deleted')),
+    (ACTION_VIEWED, _('Viewed'))
 )
 
 class Activity(models.Model):
