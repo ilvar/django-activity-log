@@ -30,7 +30,7 @@ class Activity(models.Model):
         return self.action == ACTION_ADDED
 
     def get_content_type_name_plural(self):
-        return self.content_object._meta.verbose_name_plural
+        return self.content_object and self.content_object._meta.verbose_name_plural or ''
 
 def record_activity(instance, action, user):
     if not user.is_authenticated():
