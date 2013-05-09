@@ -9,12 +9,16 @@ ACTION_ADDED = 'added'
 ACTION_EDITED = 'edited'
 ACTION_DELETED = 'deleted'
 ACTION_VIEWED = 'viewed'
+ACTION_LOGGED_IN = 'logged in'
+ACTION_DOWNLOADED = 'downloaded'
 
 ACTIONS = (
     (ACTION_ADDED, _('Added')),
     (ACTION_EDITED, _('Edited')),
     (ACTION_DELETED, _('Deleted')),
-    (ACTION_VIEWED, _('Viewed'))
+    (ACTION_VIEWED, _('Viewed')),
+    (ACTION_LOGGED_IN, _('Logged in')),
+    (ACTION_DOWNLOADED, _('Downloaded')),
 )
 
 class Activity(models.Model):
